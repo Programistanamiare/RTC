@@ -8,12 +8,12 @@ RTC::RTC(DelayFunctionPtr delay_function)
   this->counter = 0U;
 }
 
-long RTC::wait(const uint64_t& time)
+int64_t RTC::wait(const uint64_t& time, const bool& incrase_timer)
 {
   uint64_t elapsed_time = this->getTime();
   if (time > elapsed_time) this->delay_f_ptr(time - elapsed_time);
   this->timer = this->time_f_ptr();
-  this->counter++;
+  this->counter += (int)incrase_timer;
   return time - elapsed_time;
 }
 
