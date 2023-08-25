@@ -37,15 +37,15 @@ with included examples or take only header and interface files from <a href="htt
 
 ## Documentation
 
-Constructor get reference to delay function like **delay** or **delayMicroseconds**.
+Constructor get reference to delay function like **delay** or **delayMicroseconds**.<br>
 @param **delay_fun_ptr** pointer type accepting a function that takes type "unsigned long" and returns type "void". Prepared to store a pointer to the "delay" or "delayMicroseconds" function.
 ```
   RTC::RTC(DelayFunctionPtr delay_fun_ptr) 
 ``` 
 
-A member function that stops the program for the time specified as an argument, subtracted from the time since the last call to this function.
-@param **time** implied time since the last call.
-@param **incrase_counter** if <i>true</i> incrase internal counter of calls this function. <i>True</i> is set by default.
+A member function that stops the program for the time specified as an argument, subtracted from the time since the last call to this function.<br>
+@param **time** implied time since the last call.<br>
+@param **incrase_counter** if <i>true</i> incrase internal counter of calls this function. <i>True</i> is set by default.<br>
 @return the difference between the set time and the actual time since the previous call to this function.
 ```
   int64_t RTC::wait(const uint64_t& time, const bool& incrase_counter) 
