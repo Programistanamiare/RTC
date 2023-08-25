@@ -13,7 +13,7 @@ with included examples or take only header and interface files from <a href="htt
 ## Examples
 
 <details>
-<summary>Click **here** to see few examples how to use library</summary>
+<summary>Click <b>here</b> to see few examples how to use library.</summary>
 
 ### Same time loop
 
