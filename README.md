@@ -64,6 +64,4 @@ A member function that return internal counter of 'wait()' member function calls
 A member function that reset internal counter.
 ```
   void RTC::resetCounter()
-```
-
-  
+```  
