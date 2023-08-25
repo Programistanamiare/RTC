@@ -15,7 +15,7 @@ with included examples or take only header and interface files from <a href="htt
 <details>
 <summary>Click <b>here</b> to see few examples how to use library.</summary>
 
-### Same time loop
+### Same time loop.
 
 ```
   #include "RTC.hpp"
@@ -40,7 +40,7 @@ with included examples or take only header and interface files from <a href="htt
 
 ```
 
-### Same interval beetwen part of program
+### Same interval between parts of program.
 
 ```
   #include "RTC.hpp"
