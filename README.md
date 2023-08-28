@@ -88,6 +88,8 @@ Constructor get reference to delay function like **delay** or **delayMicrosecond
 ```cpp
   RTC::RTC(DelayFunctionPtr delay_fun_ptr) 
 ```
+---
+<br>
 
 A member function that stops the program for the time specified as an argument, subtracted from the time since the last call to this function.<br>
 @param **time** implied time since the last call.<br>
@@ -97,21 +99,27 @@ A member function that stops the program for the time specified as an argument, 
 ```cpp
   int64_t RTC::wait(const uint64_t& time, const bool& incrase_counter) 
 ```
+---
+<br>
 
 A member function that returns the time since the last call to the wait() member function.
 
 ```cpp
   uint64_t RTC::getTime() const
 ```
+---
+<br>
 
 A member function that return internal counter of 'wait()' member function calls.
 
 ```cpp
   const uint32_t& RTC::getCounter() const
 ```
+---
+<br>
 
 A member function that reset internal counter.
 
 ```cpp
   void RTC::resetCounter()
-```  
+```
